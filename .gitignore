@@ -1,0 +1,46 @@
+# Environment & credentials — NEVER commit these
+.env
+*.json.key
+chartered_ai_json_key.json
+*service_account*.json
+*credentials*.json
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+server.log
+server_err.log
+frontend.log
+frontend_err.log
+adk_web.log
+adk_web_err.log
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

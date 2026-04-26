@@ -1,0 +1,4 @@
+week_ending,venue,projected_sales,actual_sales,scheduled_hours,actual_hours,actual_labor_cost,server_hours,bartender_hours,host_hours,line_cook_hours,prep_cook_hours,dishwasher_hours,mgmt_hours,overtime_hours
+2026-03-08,Central Ave,38500,38405,545,546,12289,200,45,35,125,48,43,50,1.5
+2026-03-08,Riverside,43500,43605,580,581,13081,225,50,35,135,45,41,50,1.5
+2026-03-08,Downtown,48000,48255,640,643,14476,245,60,40,150,55,43,50,2

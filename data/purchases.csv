@@ -1,0 +1,22 @@
+venue_id,date,vendor,category,amount,invoice_id
+heathfield,2026-03-01,Sysco,Protein,1245.50,INV-001
+heathfield,2026-03-02,US Foods,Produce,876.25,INV-002
+heathfield,2026-03-03,Performance Food,Dairy,654.80,INV-003
+heathfield,2026-03-04,Sysco,Protein,1102.30,INV-004
+heathfield,2026-03-05,Restaurant Depot,Dry Goods,523.40,INV-005
+heathfield,2026-03-06,US Foods,Produce,789.60,INV-006
+heathfield,2026-03-07,Sysco,Protein,1310.00,INV-007
+3t0862,2026-03-01,Sysco,Protein,1456.75,INV-008
+3t0862,2026-03-02,US Foods,Produce,934.20,INV-009
+3t0862,2026-03-03,Performance Food,Dairy,712.50,INV-010
+3t0862,2026-03-04,Sysco,Protein,1278.90,INV-011
+3t0862,2026-03-05,Restaurant Depot,Dry Goods,601.30,INV-012
+3t0862,2026-03-06,US Foods,Produce,845.00,INV-013
+3t0862,2026-03-07,Sysco,Protein,1523.80,INV-014
+downtown_hub,2026-03-01,Sysco,Protein,1687.40,INV-015
+downtown_hub,2026-03-02,US Foods,Produce,1123.60,INV-016
+downtown_hub,2026-03-03,Performance Food,Dairy,845.20,INV-017
+downtown_hub,2026-03-04,Sysco,Protein,1534.70,INV-018
+downtown_hub,2026-03-05,Restaurant Depot,Dry Goods,723.80,INV-019
+downtown_hub,2026-03-06,US Foods,Produce,956.30,INV-020
+downtown_hub,2026-03-07,Sysco,Protein,1812.50,INV-021
