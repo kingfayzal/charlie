@@ -41,6 +41,9 @@ frontend/dist/
 *.swp
 *.swo
 
+# Claude Code internal
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db

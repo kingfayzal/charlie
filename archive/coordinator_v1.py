@@ -1,5 +1,6 @@
+# V1 orchestrator -- manual routing via Vertex AI SDK. Superseded by Google ADK multi-agent hierarchy (app/ai/agents/).
 """
-PrimeOps Agentic OS — AI Orchestrator
+PrimeOps Agentic OS -- AI Orchestrator
 Manages the multi-agent hierarchy using the Vertex AI Python SDK.
 
 Agents:
@@ -95,7 +96,7 @@ class QuantAgent:
         Executes the Quant Agent reasoning loop.
         """
         print(f"[Quant Agent] Analyzing request: '{query}' with context {context}")
-        
+
         if not self._live:
             # Simulated fallback for tests without GCP auth
             venue_id = context.get("venue_id", "11111111-1111-1111-1111-111111111111")
@@ -109,7 +110,7 @@ class QuantAgent:
             chat = self.model.start_chat()
             prompt = f"Context: {json.dumps(context)}. User query: {query}"
             response = chat.send_message(prompt)
-            
+
             if response.function_call:
                 func = response.function_call
                 if func.name == "get_weekly_brief":
@@ -118,14 +119,14 @@ class QuantAgent:
                     data = self._call_api("/drilldown/labor", func.args.get("venue_id"), func.args.get("week_ending"))
                 else:
                     data = {"error": "Unknown function"}
-                
+
                 response = chat.send_message(
                     Part.from_function_response(
                         name=func.name,
                         response={"content": data}
                     )
                 )
-                
+
             return response.text
         except Exception as e:
             print(f"[QuantAgent] Live generation failed: {e}")
@@ -150,17 +151,17 @@ class ConciergeAgent:
     def route_query(self, query: str) -> Dict[str, Any]:
         """Determine which agent should handle the request and extract parameters."""
         print(f"[Concierge] Routing query: '{query}'")
-        
+
         if not self._live:
             if "cost" in query.lower() or "labor" in query.lower() or "briefing" in query.lower():
                 return {
                     "target_agent": "quant",
                     "extracted_params": {
-                        "venue_id": "11111111-1111-1111-1111-111111111111" 
+                        "venue_id": "11111111-1111-1111-1111-111111111111"
                     }
                 }
             return {"target_agent": "general", "extracted_params": {}}
-            
+
         try:
             response = self.model.generate_content(
                 f"Extract intent and parameters from: {query}\n\n"
@@ -178,7 +179,7 @@ class ConciergeAgent:
 
 class Coordinator:
     """
-    The main Orchestrator class. 
+    The main Orchestrator class.
     Manages state, history, and the handoff between agents.
     """
 
@@ -189,21 +190,21 @@ class Coordinator:
 
     def handle_message(self, user_message: str) -> str:
         """Process an incoming message from the user (e.g., via WhatsApp)."""
-        
+
         self.chat_history.append({"role": "user", "content": user_message})
-        
+
         # 1. Concierge determines intent
         routing_decision = self.concierge.route_query(user_message)
-        
+
         # 2. Handoff to Specialist
         if routing_decision["target_agent"] == "quant":
             response = self.quant.process(
-                query=user_message, 
+                query=user_message,
                 context=routing_decision["extracted_params"]
             )
         else:
             response = "I can help route you to the right department. Could you specify if you need financial insights or operational help?"
-            
+
         self.chat_history.append({"role": "assistant", "content": response})
         return response
 
