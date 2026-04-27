@@ -17,6 +17,7 @@ from app.database import get_db
 from app.models import OperationalContext, Venue
 from app.schemas import ContextNoteRequest, ContextNoteResponse
 from app.errors import VenueNotFoundError
+from app.routes._venue_lookup import resolve_venue
 
 
 router = APIRouter(tags=["Context"])
@@ -40,12 +41,7 @@ async def save_context_note(
     The Quant Agent reads these notes via /brief/{venue_id} to contextualize
     its variance analysis.
     """
-    # Verify venue exists
-    result = await db.execute(select(Venue).where(Venue.id == UUID(venue_id)))
-    venue = result.scalar_one_or_none()
-
-    if not venue:
-        raise VenueNotFoundError(venue_id)
+    venue = await resolve_venue(db, venue_id)
 
     # Create context note
     note = OperationalContext(

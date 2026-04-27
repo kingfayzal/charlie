@@ -18,6 +18,7 @@ from app.database import get_db
 from app.models import OperationalContext, Venue, WeeklyReport
 from app.schemas import BriefResponse, MetricDetail
 from app.errors import VenueNotFoundError
+from app.routes._venue_lookup import resolve_venue
 
 
 router = APIRouter(tags=["Brief"])
@@ -39,12 +40,7 @@ async def get_venue_brief(
     For MVP, this returns mock/computed data. In production, it would query
     a weekly_reports table populated by the /ingest endpoint.
     """
-    # Fetch venue
-    result = await db.execute(select(Venue).where(Venue.id == UUID(venue_id)))
-    venue = result.scalar_one_or_none()
-
-    if not venue:
-        raise VenueNotFoundError(venue_id)
+    venue = await resolve_venue(db, venue_id)
 
     # Fetch recent context notes (last 5)
     notes_result = await db.execute(

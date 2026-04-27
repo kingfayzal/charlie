@@ -63,6 +63,8 @@ MAPPINGS = [
     # MarketMan Purchases: uses external ID "heathfield"
     {"external_id": "heathfield", "source_system": SourceSystem.MARKETMAN,
      "universal_venue_id": uuid.UUID("11111111-1111-1111-1111-111111111111")},
+    {"external_id": "Central Ave", "source_system": SourceSystem.MARKETMAN,
+     "universal_venue_id": uuid.UUID("11111111-1111-1111-1111-111111111111")},
 
     # --- Riverside ---
     {"external_id": "Riverside", "source_system": SourceSystem.TOAST,
@@ -71,6 +73,8 @@ MAPPINGS = [
      "universal_venue_id": uuid.UUID("22222222-2222-2222-2222-222222222222")},
     {"external_id": "3t0862", "source_system": SourceSystem.MARKETMAN,
      "universal_venue_id": uuid.UUID("22222222-2222-2222-2222-222222222222")},
+    {"external_id": "Riverside", "source_system": SourceSystem.MARKETMAN,
+     "universal_venue_id": uuid.UUID("22222222-2222-2222-2222-222222222222")},
 
     # --- Downtown ---
     {"external_id": "Downtown", "source_system": SourceSystem.TOAST,
@@ -78,6 +82,8 @@ MAPPINGS = [
     {"external_id": "Downtown", "source_system": SourceSystem.SEVEN_SHIFTS,
      "universal_venue_id": uuid.UUID("33333333-3333-3333-3333-333333333333")},
     {"external_id": "downtown_hub", "source_system": SourceSystem.MARKETMAN,
+     "universal_venue_id": uuid.UUID("33333333-3333-3333-3333-333333333333")},
+    {"external_id": "Downtown", "source_system": SourceSystem.MARKETMAN,
      "universal_venue_id": uuid.UUID("33333333-3333-3333-3333-333333333333")},
 ]
 

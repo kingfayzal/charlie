@@ -72,28 +72,9 @@ def _check_data_readiness(
                 missing_sources=["purchases"],
             )
 
-        # Granular day-level check on purchases
-        if "date" in purchases_df.columns and "date" in sales_df.columns:
-            sales_days = set(
-                sales_df[sales_df["universal_venue_id"] == venue_id]["date"]
-                .apply(lambda d: d.strftime("%Y-%m-%d") if hasattr(d, "strftime") else str(d))
-            )
-            purchase_days = set(
-                purchases_df[purchases_df["universal_venue_id"] == venue_id]["date"]
-                .apply(lambda d: d.strftime("%Y-%m-%d") if hasattr(d, "strftime") else str(d))
-            )
-            missing_days = sales_days - purchase_days
-            if missing_days:
-                # Convert ISO dates to day names for the error message
-                day_names = sorted(
-                    pd.Timestamp(d).strftime("%A") for d in missing_days
-                )
-                raise DataReadinessError(
-                    venue_name=venue_name,
-                    detail=f"{', '.join(day_names)} purchase data missing.",
-                    missing_sources=["purchases"],
-                    missing_days=day_names,
-                )
+        # Day-level granularity check intentionally omitted: invoice cadence
+        # (vendor delivery days) does not need to mirror sales days. The
+        # Purchases-to-Sales method only requires the weekly invoice total.
 
 
 # ---------------------------------------------------------------------------
