@@ -14,7 +14,7 @@ I'm applying to Klaviyo's ARIA team because the concierge-plus-specialists patte
 
 ## Problem Statement
 
-In November 2025 I sat down with the Director of Operations of a Cambridge hospitality group. He runs reporting for the group's leadership and owners and described his work like this: every morning he wishes he could open one place that just told him *"here's what happened yesterday, here's what's coming today, here's what to worry about next week."* Instead, he reconciles data across Toast, Square, 7shifts, OpenTable, Eventbrite, Triple Seat, Paychex, and Basecamp by hand.
+I sat down with the Director of Operations of a Cambridge hospitality group. He runs reporting for the group's leadership and owners and described his work like this: every morning he wishes he could open one place that just told him *"here's what happened yesterday, here's what's coming today, here's what to worry about next week."* Instead, he reconciles data across Toast, Square, 7shifts, OpenTable, Eventbrite, Triple Seat, Paychex, and Basecamp by hand.
 
 He had tried three platforms before me. All three promised forecasting and lost his trust because, in his words, *"the predictions weren't accurate at all."* When I asked what would have to be true for a tool to replace the spreadsheet ritual, his answer was unambiguous:
 
