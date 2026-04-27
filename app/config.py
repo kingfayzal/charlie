@@ -21,7 +21,7 @@ class Settings(BaseSettings):
         return self.database_url.replace("+asyncpg", "+psycopg2")
 
     # Google Cloud
-    gcs_bucket: str = "primeops-data"
+    gcs_bucket: str = "your-gcs-bucket-name"
     google_cloud_project: str = ""
     google_cloud_region: str = "us-central1"
 

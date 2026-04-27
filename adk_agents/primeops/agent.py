@@ -20,7 +20,7 @@ if _root not in sys.path:
 
 # Configure Vertex AI before importing any agent (agents instantiate at import time)
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "1")
-os.environ.setdefault("GOOGLE_CLOUD_PROJECT", "chartered-ai-prod")
+os.environ.setdefault("GOOGLE_CLOUD_PROJECT", "your-gcp-project-id")
 os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
 
 from app.ai.agents.concierge import concierge_agent  # noqa: E402

@@ -1,11 +1,11 @@
 invoice_date,venue,vendor,category,amount,invoice_number
-2026-02-23,Central Ave,Blue Ridge Meats,proteins,3110.40,BRM-1001
-2026-02-24,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4001
-2026-02-25,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3001
-2026-02-26,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5001
-2026-02-26,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6001
-2026-02-27,Central Ave,Harbor Seafood Co.,proteins,2073.60,HSC-2001
-2026-02-27,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3002
+2026-02-23,Central Ave,Blue Ridge Meats,proteins,2300.00,BRM-1001
+2026-02-24,Central Ave,Clover Dairy Co.,dairy,1620.00,CDC-4001
+2026-02-25,Central Ave,Fresh Ridge Produce,produce,1100.00,FRP-3001
+2026-02-26,Central Ave,Ace Restaurant Supply,dry_goods,1200.00,ARS-5001
+2026-02-26,Central Ave,Oak Barrel Distributors,alcohol,2500.00,OBD-6001
+2026-02-27,Central Ave,Harbor Seafood Co.,proteins,1700.00,HSC-2001
+2026-02-27,Central Ave,Fresh Ridge Produce,produce,1100.00,FRP-3002
 2026-02-23,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1002
 2026-02-24,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4002
 2026-02-25,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3003
@@ -13,20 +13,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-02-26,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6002
 2026-02-27,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2002
 2026-02-27,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3004
-2026-02-23,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1003
-2026-02-24,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4003
-2026-02-25,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3005
-2026-02-26,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5003
-2026-02-26,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6003
-2026-02-27,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2003
-2026-02-27,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3006
-2026-03-02,Central Ave,Blue Ridge Meats,proteins,3110.40,BRM-1004
-2026-03-03,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4004
-2026-03-04,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3007
-2026-03-05,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5004
-2026-03-05,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6004
-2026-03-06,Central Ave,Harbor Seafood Co.,proteins,2073.60,HSC-2004
-2026-03-06,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3008
+2026-02-23,Downtown,Blue Ridge Meats,proteins,2800.00,BRM-1003
+2026-02-24,Downtown,Clover Dairy Co.,dairy,1580.00,CDC-4003
+2026-02-25,Downtown,Fresh Ridge Produce,produce,1020.00,FRP-3005
+2026-02-26,Downtown,Ace Restaurant Supply,dry_goods,1600.00,ARS-5003
+2026-02-26,Downtown,Oak Barrel Distributors,alcohol,2800.00,OBD-6003
+2026-02-27,Downtown,Harbor Seafood Co.,proteins,1860.00,HSC-2003
+2026-02-27,Downtown,Fresh Ridge Produce,produce,880.00,FRP-3006
+2026-03-02,Central Ave,Blue Ridge Meats,proteins,2800.00,BRM-1004
+2026-03-03,Central Ave,Clover Dairy Co.,dairy,1720.00,CDC-4004
+2026-03-04,Central Ave,Fresh Ridge Produce,produce,1200.00,FRP-3007
+2026-03-05,Central Ave,Ace Restaurant Supply,dry_goods,1800.00,ARS-5004
+2026-03-05,Central Ave,Oak Barrel Distributors,alcohol,2800.00,OBD-6004
+2026-03-06,Central Ave,Harbor Seafood Co.,proteins,2000.00,HSC-2004
+2026-03-06,Central Ave,Fresh Ridge Produce,produce,1200.00,FRP-3008
 2026-03-02,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1005
 2026-03-03,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4005
 2026-03-04,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3009
@@ -34,20 +34,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-03-05,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6005
 2026-03-06,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2005
 2026-03-06,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3010
-2026-03-02,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1006
-2026-03-03,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4006
-2026-03-04,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3011
-2026-03-05,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5006
-2026-03-05,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6006
-2026-03-06,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2006
-2026-03-06,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3012
-2026-03-09,Central Ave,Blue Ridge Meats,proteins,3110.40,BRM-1007
-2026-03-10,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4007
-2026-03-11,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3013
-2026-03-12,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5007
-2026-03-12,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6007
-2026-03-13,Central Ave,Harbor Seafood Co.,proteins,2073.60,HSC-2007
-2026-03-13,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3014
+2026-03-02,Downtown,Blue Ridge Meats,proteins,2800.00,BRM-1006
+2026-03-03,Downtown,Clover Dairy Co.,dairy,1580.00,CDC-4006
+2026-03-04,Downtown,Fresh Ridge Produce,produce,1020.00,FRP-3011
+2026-03-05,Downtown,Ace Restaurant Supply,dry_goods,1600.00,ARS-5006
+2026-03-05,Downtown,Oak Barrel Distributors,alcohol,2800.00,OBD-6006
+2026-03-06,Downtown,Harbor Seafood Co.,proteins,1860.00,HSC-2006
+2026-03-06,Downtown,Fresh Ridge Produce,produce,940.00,FRP-3012
+2026-03-09,Central Ave,Blue Ridge Meats,proteins,2550.00,BRM-1007
+2026-03-10,Central Ave,Clover Dairy Co.,dairy,1710.00,CDC-4007
+2026-03-11,Central Ave,Fresh Ridge Produce,produce,1100.00,FRP-3013
+2026-03-12,Central Ave,Ace Restaurant Supply,dry_goods,1600.00,ARS-5007
+2026-03-12,Central Ave,Oak Barrel Distributors,alcohol,2500.00,OBD-6007
+2026-03-13,Central Ave,Harbor Seafood Co.,proteins,1850.00,HSC-2007
+2026-03-13,Central Ave,Fresh Ridge Produce,produce,1100.00,FRP-3014
 2026-03-09,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1008
 2026-03-10,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4008
 2026-03-11,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3015
@@ -55,20 +55,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-03-12,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6008
 2026-03-13,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2008
 2026-03-13,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3016
-2026-03-09,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1009
-2026-03-10,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4009
-2026-03-11,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3017
-2026-03-12,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5009
-2026-03-12,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6009
-2026-03-13,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2009
-2026-03-13,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3018
-2026-03-16,Central Ave,Blue Ridge Meats,proteins,3110.40,BRM-1010
-2026-03-17,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4010
-2026-03-18,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3019
-2026-03-19,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5010
-2026-03-19,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6010
-2026-03-20,Central Ave,Harbor Seafood Co.,proteins,2073.60,HSC-2010
-2026-03-20,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3020
+2026-03-09,Downtown,Blue Ridge Meats,proteins,2500.00,BRM-1009
+2026-03-10,Downtown,Clover Dairy Co.,dairy,1420.00,CDC-4009
+2026-03-11,Downtown,Fresh Ridge Produce,produce,920.00,FRP-3017
+2026-03-12,Downtown,Ace Restaurant Supply,dry_goods,1420.00,ARS-5009
+2026-03-12,Downtown,Oak Barrel Distributors,alcohol,2500.00,OBD-6009
+2026-03-13,Downtown,Harbor Seafood Co.,proteins,1680.00,HSC-2009
+2026-03-13,Downtown,Fresh Ridge Produce,produce,840.00,FRP-3018
+2026-03-16,Central Ave,Blue Ridge Meats,proteins,3000.00,BRM-1010
+2026-03-17,Central Ave,Clover Dairy Co.,dairy,1890.00,CDC-4010
+2026-03-18,Central Ave,Fresh Ridge Produce,produce,1250.00,FRP-3019
+2026-03-19,Central Ave,Ace Restaurant Supply,dry_goods,2000.00,ARS-5010
+2026-03-19,Central Ave,Oak Barrel Distributors,alcohol,3000.00,OBD-6010
+2026-03-20,Central Ave,Harbor Seafood Co.,proteins,2200.00,HSC-2010
+2026-03-20,Central Ave,Fresh Ridge Produce,produce,1250.00,FRP-3020
 2026-03-16,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1011
 2026-03-17,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4011
 2026-03-18,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3021
@@ -76,20 +76,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-03-19,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6011
 2026-03-20,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2011
 2026-03-20,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3022
-2026-03-16,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1012
-2026-03-17,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4012
-2026-03-18,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3023
-2026-03-19,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5012
-2026-03-19,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6012
-2026-03-20,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2012
-2026-03-20,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3024
-2026-03-23,Central Ave,Blue Ridge Meats,proteins,3360.00,BRM-1013
-2026-03-24,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4013
-2026-03-25,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3025
-2026-03-26,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5013
-2026-03-26,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6013
-2026-03-27,Central Ave,Harbor Seafood Co.,proteins,2240.00,HSC-2013
-2026-03-27,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3026
+2026-03-16,Downtown,Blue Ridge Meats,proteins,2580.00,BRM-1012
+2026-03-17,Downtown,Clover Dairy Co.,dairy,1460.00,CDC-4012
+2026-03-18,Downtown,Fresh Ridge Produce,produce,940.00,FRP-3023
+2026-03-19,Downtown,Ace Restaurant Supply,dry_goods,1460.00,ARS-5012
+2026-03-19,Downtown,Oak Barrel Distributors,alcohol,2580.00,OBD-6012
+2026-03-20,Downtown,Harbor Seafood Co.,proteins,1720.00,HSC-2012
+2026-03-20,Downtown,Fresh Ridge Produce,produce,840.00,FRP-3024
+2026-03-23,Central Ave,Blue Ridge Meats,proteins,3200.00,BRM-1013
+2026-03-24,Central Ave,Clover Dairy Co.,dairy,1880.00,CDC-4013
+2026-03-25,Central Ave,Fresh Ridge Produce,produce,1300.00,FRP-3025
+2026-03-26,Central Ave,Ace Restaurant Supply,dry_goods,2000.00,ARS-5013
+2026-03-26,Central Ave,Oak Barrel Distributors,alcohol,3000.00,OBD-6013
+2026-03-27,Central Ave,Harbor Seafood Co.,proteins,2300.00,HSC-2013
+2026-03-27,Central Ave,Fresh Ridge Produce,produce,1300.00,FRP-3026
 2026-03-23,Riverside,Blue Ridge Meats,proteins,3813.60,BRM-1014
 2026-03-24,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4014
 2026-03-25,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3027
@@ -97,20 +97,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-03-26,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6014
 2026-03-27,Riverside,Harbor Seafood Co.,proteins,2542.40,HSC-2014
 2026-03-27,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3028
-2026-03-23,Downtown,Blue Ridge Meats,proteins,3939.60,BRM-1015
-2026-03-24,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4015
-2026-03-25,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3029
-2026-03-26,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5015
-2026-03-26,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6015
-2026-03-27,Downtown,Harbor Seafood Co.,proteins,2626.40,HSC-2015
-2026-03-27,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3030
-2026-03-30,Central Ave,Blue Ridge Meats,proteins,3720.00,BRM-1016
-2026-03-31,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4016
-2026-04-01,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3031
-2026-04-02,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5016
-2026-04-02,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6016
-2026-04-03,Central Ave,Harbor Seafood Co.,proteins,2480.00,HSC-2016
-2026-04-03,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3032
+2026-03-23,Downtown,Blue Ridge Meats,proteins,3000.00,BRM-1015
+2026-03-24,Downtown,Clover Dairy Co.,dairy,1700.00,CDC-4015
+2026-03-25,Downtown,Fresh Ridge Produce,produce,1100.00,FRP-3029
+2026-03-26,Downtown,Ace Restaurant Supply,dry_goods,1700.00,ARS-5015
+2026-03-26,Downtown,Oak Barrel Distributors,alcohol,3000.00,OBD-6015
+2026-03-27,Downtown,Harbor Seafood Co.,proteins,2000.00,HSC-2015
+2026-03-27,Downtown,Fresh Ridge Produce,produce,980.00,FRP-3030
+2026-03-30,Central Ave,Blue Ridge Meats,proteins,3400.00,BRM-1016
+2026-03-31,Central Ave,Clover Dairy Co.,dairy,1760.00,CDC-4016
+2026-04-01,Central Ave,Fresh Ridge Produce,produce,1350.00,FRP-3031
+2026-04-02,Central Ave,Ace Restaurant Supply,dry_goods,2100.00,ARS-5016
+2026-04-02,Central Ave,Oak Barrel Distributors,alcohol,3000.00,OBD-6016
+2026-04-03,Central Ave,Harbor Seafood Co.,proteins,2400.00,HSC-2016
+2026-04-03,Central Ave,Fresh Ridge Produce,produce,1350.00,FRP-3032
 2026-03-30,Riverside,Blue Ridge Meats,proteins,3813.60,BRM-1017
 2026-03-31,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4017
 2026-04-01,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3033
@@ -118,20 +118,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-04-02,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6017
 2026-04-03,Riverside,Harbor Seafood Co.,proteins,2542.40,HSC-2017
 2026-04-03,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3034
-2026-03-30,Downtown,Blue Ridge Meats,proteins,3939.60,BRM-1018
-2026-03-31,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4018
-2026-04-01,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3035
-2026-04-02,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5018
-2026-04-02,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6018
-2026-04-03,Downtown,Harbor Seafood Co.,proteins,2626.40,HSC-2018
-2026-04-03,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3036
-2026-04-06,Central Ave,Blue Ridge Meats,proteins,3780.00,BRM-1019
-2026-04-07,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4019
-2026-04-08,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3037
-2026-04-09,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5019
-2026-04-09,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6019
-2026-04-10,Central Ave,Harbor Seafood Co.,proteins,2520.00,HSC-2019
-2026-04-10,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3038
+2026-03-30,Downtown,Blue Ridge Meats,proteins,2800.00,BRM-1018
+2026-03-31,Downtown,Clover Dairy Co.,dairy,1580.00,CDC-4018
+2026-04-01,Downtown,Fresh Ridge Produce,produce,1020.00,FRP-3035
+2026-04-02,Downtown,Ace Restaurant Supply,dry_goods,1600.00,ARS-5018
+2026-04-02,Downtown,Oak Barrel Distributors,alcohol,2800.00,OBD-6018
+2026-04-03,Downtown,Harbor Seafood Co.,proteins,1860.00,HSC-2018
+2026-04-03,Downtown,Fresh Ridge Produce,produce,880.00,FRP-3036
+2026-04-06,Central Ave,Blue Ridge Meats,proteins,3600.00,BRM-1019
+2026-04-07,Central Ave,Clover Dairy Co.,dairy,1650.00,CDC-4019
+2026-04-08,Central Ave,Fresh Ridge Produce,produce,1400.00,FRP-3037
+2026-04-09,Central Ave,Ace Restaurant Supply,dry_goods,2200.00,ARS-5019
+2026-04-09,Central Ave,Oak Barrel Distributors,alcohol,3000.00,OBD-6019
+2026-04-10,Central Ave,Harbor Seafood Co.,proteins,2500.00,HSC-2019
+2026-04-10,Central Ave,Fresh Ridge Produce,produce,1400.00,FRP-3038
 2026-04-06,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1020
 2026-04-07,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4020
 2026-04-08,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3039
@@ -139,20 +139,20 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-04-09,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6020
 2026-04-10,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2020
 2026-04-10,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3040
-2026-04-06,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1021
-2026-04-07,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4021
-2026-04-08,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3041
-2026-04-09,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5021
-2026-04-09,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6021
-2026-04-10,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2021
-2026-04-10,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3042
-2026-04-13,Central Ave,Blue Ridge Meats,proteins,3840.00,BRM-1022
-2026-04-14,Central Ave,Clover Dairy Co.,dairy,1728.00,CDC-4022
-2026-04-15,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3043
-2026-04-16,Central Ave,Ace Restaurant Supply,dry_goods,1728.00,ARS-5022
-2026-04-16,Central Ave,Oak Barrel Distributors,alcohol,6300.00,OBD-6022
-2026-04-17,Central Ave,Harbor Seafood Co.,proteins,2560.00,HSC-2022
-2026-04-17,Central Ave,Fresh Ridge Produce,produce,1440.00,FRP-3044
+2026-04-06,Downtown,Blue Ridge Meats,proteins,2820.00,BRM-1021
+2026-04-07,Downtown,Clover Dairy Co.,dairy,1560.00,CDC-4021
+2026-04-08,Downtown,Fresh Ridge Produce,produce,1030.00,FRP-3041
+2026-04-09,Downtown,Ace Restaurant Supply,dry_goods,1580.00,ARS-5021
+2026-04-09,Downtown,Oak Barrel Distributors,alcohol,2800.00,OBD-6021
+2026-04-10,Downtown,Harbor Seafood Co.,proteins,1870.00,HSC-2021
+2026-04-10,Downtown,Fresh Ridge Produce,produce,880.00,FRP-3042
+2026-04-13,Central Ave,Blue Ridge Meats,proteins,3800.00,BRM-1022
+2026-04-14,Central Ave,Clover Dairy Co.,dairy,1530.00,CDC-4022
+2026-04-15,Central Ave,Fresh Ridge Produce,produce,1450.00,FRP-3043
+2026-04-16,Central Ave,Ace Restaurant Supply,dry_goods,2300.00,ARS-5022
+2026-04-16,Central Ave,Oak Barrel Distributors,alcohol,3000.00,OBD-6022
+2026-04-17,Central Ave,Harbor Seafood Co.,proteins,2600.00,HSC-2022
+2026-04-17,Central Ave,Fresh Ridge Produce,produce,1450.00,FRP-3044
 2026-04-13,Riverside,Blue Ridge Meats,proteins,3531.60,BRM-1023
 2026-04-14,Riverside,Clover Dairy Co.,dairy,1962.00,CDC-4023
 2026-04-15,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3045
@@ -160,10 +160,10 @@ invoice_date,venue,vendor,category,amount,invoice_number
 2026-04-16,Riverside,Oak Barrel Distributors,alcohol,7200.00,OBD-6023
 2026-04-17,Riverside,Harbor Seafood Co.,proteins,2354.40,HSC-2023
 2026-04-17,Riverside,Fresh Ridge Produce,produce,1635.00,FRP-3046
-2026-04-13,Downtown,Blue Ridge Meats,proteins,3648.00,BRM-1024
-2026-04-14,Downtown,Clover Dairy Co.,dairy,2026.00,CDC-4024
-2026-04-15,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3047
-2026-04-16,Downtown,Ace Restaurant Supply,dry_goods,2026.00,ARS-5024
-2026-04-16,Downtown,Oak Barrel Distributors,alcohol,7900.00,OBD-6024
-2026-04-17,Downtown,Harbor Seafood Co.,proteins,2432.00,HSC-2024
-2026-04-17,Downtown,Fresh Ridge Produce,produce,1688.50,FRP-3048
+2026-04-13,Downtown,Blue Ridge Meats,proteins,2800.00,BRM-1024
+2026-04-14,Downtown,Clover Dairy Co.,dairy,1560.00,CDC-4024
+2026-04-15,Downtown,Fresh Ridge Produce,produce,1030.00,FRP-3047
+2026-04-16,Downtown,Ace Restaurant Supply,dry_goods,1600.00,ARS-5024
+2026-04-16,Downtown,Oak Barrel Distributors,alcohol,2800.00,OBD-6024
+2026-04-17,Downtown,Harbor Seafood Co.,proteins,1870.00,HSC-2024
+2026-04-17,Downtown,Fresh Ridge Produce,produce,880.00,FRP-3048
