@@ -11,6 +11,7 @@ from app.ai.agents.quant import quant_agent
 from app.ai.agents.labor import labor_agent
 from app.ai.agents.food_cost import food_cost_agent
 from app.ai.agents.benchmark import benchmark_agent
+from app.ai.agents.sentinel import sentinel_agent
 
 concierge_agent = LlmAgent(
     name="concierge",
@@ -22,6 +23,7 @@ ROUTING RULES -- always delegate, never answer financial questions yourself:
 - Labor, overtime, scheduling, staffing, BOH/FOH, shift hours, headcount -> labor_arbitrage_agent
 - Food cost, purchases, vendors, categories, invoices, waste, spend -> food_cost_agent
 - Comparing venues, rankings, multi-location, best/worst performer -> benchmark_agent
+- Trends, forecasting, "next week", drift, prediction, multi-week patterns, "going to miss", "will it" -> sentinel_agent
 
 WORKFLOW -- follow every step in order:
 1. If the operator mentions a venue by name, call resolve_venue_by_name to get the venue_id.
@@ -46,5 +48,6 @@ HARD RULES:
         AgentTool(agent=labor_agent),
         AgentTool(agent=food_cost_agent),
         AgentTool(agent=benchmark_agent),
+        AgentTool(agent=sentinel_agent),
     ],
 )

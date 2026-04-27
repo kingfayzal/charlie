@@ -196,6 +196,26 @@ class DataReadinessErrorResponse(BaseModel):
 
 
 # ---------------------------------------------------------------------------
+# Trend Window -- Sentinel Agent input
+# ---------------------------------------------------------------------------
+class WeeklySnapshot(BaseModel):
+    """One week's worth of metrics for Sentinel's drift analysis."""
+    week_ending: date
+    net_sales: float
+    prime: MetricDetail
+    labor: MetricDetail
+    food: MetricDetail
+    primary_driver: str
+
+
+class TrendResponse(BaseModel):
+    venue_id: str
+    venue_name: str
+    weeks: int = Field(..., description="Number of weeks actually returned (may be less than requested if history is short)")
+    snapshots: list[WeeklySnapshot] = Field(..., description="Weekly snapshots ordered oldest to newest")
+
+
+# ---------------------------------------------------------------------------
 # Chat
 # ---------------------------------------------------------------------------
 class ChatRequest(BaseModel):

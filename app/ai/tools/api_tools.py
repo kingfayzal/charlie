@@ -71,6 +71,16 @@ async def compare_all_venues(week_ending: str | None = None) -> dict:
     return await _get("/compare/venues", {"week_ending": week_ending} if week_ending else None)
 
 
+async def get_trend_window(venue_id: str, weeks: int = 4) -> dict:
+    """
+    Fetch the last N weekly performance snapshots for a venue, ordered oldest to newest.
+    Returns prime/labor/food % and net_sales for each week.
+    Use to detect multi-week drift: 3+ consecutive weeks moving the same direction = signal.
+    Default N=4 weeks; pass weeks=8 (or more) for longer-cycle pattern detection.
+    """
+    return await _get(f"/trend/{venue_id}", {"weeks": weeks})
+
+
 async def save_context_note(venue_id: str, note: str) -> dict:
     """
     Save an operational context note for a venue (persistent agent memory).

@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db
 from app.errors import register_exception_handlers
-from app.routes import ingest, upload, brief, drilldown, food_drilldown, compare, context, venues, chat
+from app.routes import ingest, upload, brief, drilldown, food_drilldown, compare, context, venues, chat, trend
 
 
 # ---------------------------------------------------------------------------
@@ -60,6 +60,7 @@ app.include_router(drilldown.router)
 app.include_router(food_drilldown.router)
 app.include_router(compare.router)
 app.include_router(context.router)
+app.include_router(trend.router)
 app.include_router(chat.router)
 
 
@@ -79,6 +80,7 @@ async def health_check():
             "GET /brief/{venue_id}",
             "GET /drilldown/labor/{venue_id}", "GET /drilldown/food/{venue_id}",
             "GET /compare/venues",
+            "GET /trend/{venue_id}",
             "PATCH /context/{venue_id}",
             "POST /chat",
         ],
