@@ -4,7 +4,7 @@ A multi-agent AI system that gives multi-unit restaurant Directors of Operations
 
 ## About the Builder
 
-I'm Fayzal Mohammed. I build agentic AI systems and the data infrastructure underneath them.
+I'm Fayzal. I build agentic AI systems and the data infrastructure underneath them.
 
 Before this, I built **Sally** — an internal AI chatbot deployed at a previous role. The architectural pattern I'm using in Charlie (a routing concierge over specialist agents reading from a unified data layer) is a direct evolution of what Sally taught me: agents need narrow, well-bounded jobs and clean data underneath them, or they hallucinate confidently.
 
