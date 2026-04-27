@@ -44,6 +44,9 @@ frontend/dist/
 # Claude Code internal
 .claude/
 
+# Local debug / one-off helper scripts
+scratch/
+
 # OS
 .DS_Store
 Thumbs.db

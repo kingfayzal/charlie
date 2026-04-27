@@ -84,7 +84,7 @@ async def chat_endpoint(request: ChatRequest):
             reply = (
                 "Gemini models are not yet enabled on this GCP project. "
                 "In the Cloud Console, go to Vertex AI -> Model Garden and enable access "
-                "to Gemini models for project 'chartered-ai-prod', then restart the server."
+                "to Gemini models for your GOOGLE_CLOUD_PROJECT, then restart the server."
             )
         else:
             reply = f"Agent error: {err[:300]}"
