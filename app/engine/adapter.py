@@ -19,6 +19,13 @@ from typing import Optional
 import pandas as pd
 
 
+def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Normalize raw CSV headers for resilient column matching."""
+    out = df.copy()
+    out.columns = [str(c).strip().lower().replace(" ", "_") for c in out.columns]
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Role → Type Mapping (BOH vs FOH)
 # ---------------------------------------------------------------------------
@@ -72,11 +79,20 @@ def adapt_sales(df: pd.DataFrame) -> pd.DataFrame:
     Output columns:
         venue_ext_id, date, net_sales
     """
-    df = df.copy()
+    df = _normalize_columns(df)
 
     # Rename venue → venue_ext_id (the resolver's expected key)
+    rename_map = {}
     if "venue" in df.columns and "venue_ext_id" not in df.columns:
-        df = df.rename(columns={"venue": "venue_ext_id"})
+        rename_map["venue"] = "venue_ext_id"
+    if "venue_id" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue_id"] = "venue_ext_id"
+    if "venue_name" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue_name"] = "venue_ext_id"
+    if "net_sales_$" in df.columns and "net_sales" not in df.columns:
+        rename_map["net_sales_$"] = "net_sales"
+    if rename_map:
+        df = df.rename(columns=rename_map)
 
     # Ensure date is parsed
     if "date" in df.columns:
@@ -120,11 +136,20 @@ def adapt_labor(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
                          scheduled_hours, actual_hours, overtime_hours
         - labor_roles: venue_ext_id, week_ending, role, role_type, hours
     """
-    df = df.copy()
+    df = _normalize_columns(df)
 
     # Rename venue → venue_ext_id
+    rename_map = {}
     if "venue" in df.columns and "venue_ext_id" not in df.columns:
-        df = df.rename(columns={"venue": "venue_ext_id"})
+        rename_map["venue"] = "venue_ext_id"
+    if "venue_id" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue_id"] = "venue_ext_id"
+    if "venue_name" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue_name"] = "venue_ext_id"
+    if "labor_cost" in df.columns and "actual_labor_cost" not in df.columns:
+        rename_map["labor_cost"] = "actual_labor_cost"
+    if rename_map:
+        df = df.rename(columns=rename_map)
 
     df["venue_ext_id"] = df["venue_ext_id"].astype(str).str.strip()
 
@@ -201,14 +226,24 @@ def adapt_purchases(df: pd.DataFrame) -> pd.DataFrame:
     Output columns:
         venue_ext_id, date, vendor, invoice_total, category
     """
-    df = df.copy()
+    df = _normalize_columns(df)
 
     # Rename columns to match cruncher expectations
     rename_map = {}
+    if "venue" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue"] = "venue_ext_id"
     if "venue_id" in df.columns and "venue_ext_id" not in df.columns:
         rename_map["venue_id"] = "venue_ext_id"
+    if "venue_name" in df.columns and "venue_ext_id" not in df.columns:
+        rename_map["venue_name"] = "venue_ext_id"
     if "amount" in df.columns and "invoice_total" not in df.columns:
         rename_map["amount"] = "invoice_total"
+    if "total" in df.columns and "invoice_total" not in df.columns:
+        rename_map["total"] = "invoice_total"
+    if "invoice_amount" in df.columns and "invoice_total" not in df.columns:
+        rename_map["invoice_amount"] = "invoice_total"
+    if "invoice_date" in df.columns and "date" not in df.columns:
+        rename_map["invoice_date"] = "date"
 
     if rename_map:
         df = df.rename(columns=rename_map)

@@ -20,18 +20,28 @@ async def _get(path: str, params: dict | None = None) -> dict:
     try:
         async with httpx.AsyncClient(timeout=20.0) as client:
             resp = await client.get(f"{_BASE}{path}", params=params or {})
-            return resp.json()
+        if resp.status_code >= 400:
+            return {
+                "error": f"Backend returned {resp.status_code} for GET {path}",
+                "detail": resp.text[:500],
+            }
+        return resp.json()
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"Request to {path} failed: {e}"}
 
 
 async def _patch(path: str, payload: dict) -> dict:
     try:
         async with httpx.AsyncClient(timeout=20.0) as client:
             resp = await client.patch(f"{_BASE}{path}", json=payload)
-            return resp.json()
+        if resp.status_code >= 400:
+            return {
+                "error": f"Backend returned {resp.status_code} for PATCH {path}",
+                "detail": resp.text[:500],
+            }
+        return resp.json()
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"Request to {path} failed: {e}"}
 
 
 async def get_weekly_brief(venue_id: str, week_ending: str | None = None) -> dict:

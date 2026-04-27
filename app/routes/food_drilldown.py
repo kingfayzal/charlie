@@ -18,6 +18,7 @@ from app.database import get_db
 from app.models import FoodDrilldown, Venue
 from app.schemas import CategoryDetail, FoodDrilldownResponse, VendorDetail
 from app.errors import VenueNotFoundError
+from app.routes._venue_lookup import resolve_venue
 
 
 router = APIRouter(tags=["Drilldown"])
@@ -34,10 +35,7 @@ async def get_food_drilldown(
     The Food Cost Agent calls this to identify top spend categories,
     vendor price anomalies, and waste signals.
     """
-    result = await db.execute(select(Venue).where(Venue.id == UUID(venue_id)))
-    venue = result.scalar_one_or_none()
-    if not venue:
-        raise VenueNotFoundError(venue_id)
+    venue = await resolve_venue(db, venue_id)
 
     we_date = week_ending or date.today()
 

@@ -18,6 +18,7 @@ from app.database import get_db
 from app.models import Venue, LaborDrilldown
 from app.schemas import LaborDrilldownResponse, RoleDetail
 from app.errors import VenueNotFoundError
+from app.routes._venue_lookup import resolve_venue
 
 
 router = APIRouter(tags=["Drilldown"])
@@ -40,12 +41,7 @@ async def get_labor_drilldown(
     For MVP, returns a template structure. In production, this pulls from
     stored labor data populated by the /ingest pipeline.
     """
-    # Fetch venue
-    result = await db.execute(select(Venue).where(Venue.id == UUID(venue_id)))
-    venue = result.scalar_one_or_none()
-
-    if not venue:
-        raise VenueNotFoundError(venue_id)
+    venue = await resolve_venue(db, venue_id)
 
     # Fetch report
     we_date = week_ending or date.today()

@@ -16,6 +16,7 @@ from app.database import get_db
 from app.errors import VenueNotFoundError
 from app.models import Venue, WeeklyReport
 from app.schemas import MetricDetail, TrendResponse, WeeklySnapshot
+from app.routes._venue_lookup import resolve_venue
 
 router = APIRouter(tags=["Trend"])
 
@@ -31,11 +32,7 @@ async def get_venue_trend(
     Sentinel calls this to detect multi-week metric drift before forecasting.
     Returns however many weeks of history exist if fewer than requested.
     """
-    result = await db.execute(select(Venue).where(Venue.id == UUID(venue_id)))
-    venue = result.scalar_one_or_none()
-
-    if not venue:
-        raise VenueNotFoundError(venue_id)
+    venue = await resolve_venue(db, venue_id)
 
     reports_result = await db.execute(
         select(WeeklyReport)
